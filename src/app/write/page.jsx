@@ -20,6 +20,9 @@ const WritePage = () => {
     const [value, setValue] = useState("")
     const [title, setTitle] = useState("")
     const storage = getStorage(app);
+
+
+
     useEffect(() => {
         const upload = () => {
             const name = new Date().getTime + file.name;
