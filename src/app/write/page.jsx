@@ -2,12 +2,13 @@
 import React, { useEffect, useState } from 'react'
 import styles from './writePage.module.css'
 import Image from 'next/image'
-import ReactQuill from 'react-quill'
+
 import 'react-quill/dist/quill.bubble.css'
 import { useRouter } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { app } from '@/utils/firebase'
+import ReactQuill from 'react-quill'
 
 const WritePage = () => {
     const { status } = useSession();
