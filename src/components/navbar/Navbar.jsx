@@ -24,6 +24,7 @@ const Navbar = () => {
                 <Link href='/' className={styles.link}>
                     About
                 </Link>
+
                 <AuthLinks />
             </div>
         </div>

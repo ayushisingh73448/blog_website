@@ -10,7 +10,7 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/
 import { app } from '@/utils/firebase'
 
 const WritePage = () => {
-    const { data, status } = useSession();
+    const { status } = useSession();
 
     const router = useRouter();
 
