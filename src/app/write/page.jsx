@@ -84,7 +84,7 @@ const WritePage = () => {
             })
         })
     }
-    if (typeof window !==)
+    if (typeof window !== 'undefined') {
 
         return (
             <>
@@ -124,6 +124,6 @@ const WritePage = () => {
                 </div>
             </>
         )
+    }
 }
-
 export default WritePage
